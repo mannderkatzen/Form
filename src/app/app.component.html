@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" class="navbar">
+  <div><a role="button" (click)="gotohome()"><u>HOME</u></a></div>
+  <div>
+    <span><a role="button" (click)="changeview1()">Register</a></span>
+    <span><a role="button" (click)="changeview2()">Login</a></span>
+  </div>
+</mat-toolbar>
+<app-form-register *ngIf="reg&&!val"></app-form-register>
+<app-form-login *ngIf="!reg&&!val" (verified)="verified()"></app-form-login>
+<app-form-home *ngIf="val&&loggedin"></app-form-home>

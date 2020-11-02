@@ -1,0 +1,8 @@
+<mat-toolbar>
+    <div>LOGIN</div>
+</mat-toolbar><br>
+<div class="content">  
+    <mat-form-field><input matInput placeholder="Email Id" type = "text" [(ngModel)]="email"></mat-form-field><br>
+    <mat-form-field><input matInput placeholder="Password" type = "password" [(ngModel)]="pswd"></mat-form-field><br>
+    <button mat-raised-button color="primary" (click)="authenticate()">LOGIN</button>
+</div>

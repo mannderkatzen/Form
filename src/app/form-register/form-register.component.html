@@ -1,0 +1,20 @@
+<mat-toolbar>
+    <div>Registration</div>
+</mat-toolbar><br>
+<div class="content">
+    
+    <mat-form-field><input matInput placeholder="First Name" type = "text" [(ngModel)]="fname"></mat-form-field><br>
+    <mat-form-field><input matInput placeholder="Last Name" type = "text" [(ngModel)]="lname"></mat-form-field><br>
+    <mat-form-field><input matInput placeholder="Address" type = "text" [(ngModel)]="add"></mat-form-field><br>
+    <mat-form-field><input matInput placeholder="Email Id" type = "email" [(ngModel)]="email"></mat-form-field><br>
+    <mat-form-field><input matInput placeholder="Password" type = "password" [(ngModel)]="pswd"></mat-form-field><br>
+    Gender:<br><br>
+    <mat-radio-group [(ngModel)]="gen">
+        <mat-radio-button value = "Male" >Male</mat-radio-button>
+        <mat-radio-button value = "Female" >Female</mat-radio-button>
+        <mat-radio-button value = "Others">Others</mat-radio-button>
+    </mat-radio-group><br>
+    <br>
+    <mat-form-field><input matInput placeholder="Date of Birth" type="date" [(ngModel)]="date"></mat-form-field><br>
+    <button mat-raised-button color="primary" (click)="register()">REGISTER</button>
+</div>
